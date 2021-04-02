@@ -1,0 +1,110 @@
+@keyframes btnAnimation{
+    from {background-color: rgb(31, 31, 31);}
+    to {background-color: cyan;}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2vw;
+}
+   
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background-color: cyan; 
+   border-radius: 2vw;
+ }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 128, 128); 
+}
+
+body.rechner {
+    background-color: #37474F;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0vh;
+    margin-left: 0vw;
+}
+
+
+table.rechner {
+    border: 0.2vw solid transparent; 
+}
+
+.rechnerBtn {
+    border-color: cyan;
+    border-radius: 2vw;
+    border: 0.2vw solid cyan;
+    width: 15.6vw;
+    height: 10vh;
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+    padding: 0;
+}
+
+.rechnerBtn:hover {
+    border-color: rgb(0, 92, 92);
+    animation-name: btnAnimation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+
+.rechnerOutput {
+    background-color: rgb(31, 31, 31);
+    text-align: right;
+    padding-top: 0.6vh;
+    padding-right: 2.5vw;
+
+    border: 0.2vw solid cyan;
+    border-radius: 2vw;
+
+    width: 61vw;
+    height: 14vh;
+}
+
+.outputHistory {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    list-style-type: none;
+
+    padding-left: 0vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    width: 21vw;
+    border: 0.2vw solid cyan;
+    border-radius: 2vw;
+    height: 83vh;
+
+
+    overflow: hidden;
+    overflow-y: visible;
+}
+
+.lineHeadding {
+    width: 40vw;
+    margin-top: -6vh;
+    margin-bottom: 9vh;
+}
+
+.lineOutput {
+    border: 0.2vw dashed;
+    border-color: cyan;
+    width: 20.8vw;
+    margin-top: 1.8vw;
+}
+.outputHeadline {
+    font-size: 2vw;
+
+}
+
+.rechnerOutputText {
+    padding-top: 3.5vh;
+}

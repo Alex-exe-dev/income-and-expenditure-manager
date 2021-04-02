@@ -1,0 +1,64 @@
+@font-face {
+    font-family: SansitaSwashed;
+    src: url(SansitaSwashed-VariableFont_wght.ttf)
+}
+
+body {
+  margin: 0;
+  background-color: #37474F;
+}
+
+.button {
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.defaultText {
+    font-size: 2vh;
+    padding: 0;
+    font-family: SansitaSwashed;
+
+}
+
+.defaultHeadder {
+    font-size: 10vh;
+    text-align: center;
+    font-family: SansitaSwashed;
+
+}
+
+.inputTextFeld {
+
+    border: 3px solid cyan;
+    border-radius: 12px;
+    width: 400px;
+    height: 22px;
+
+    text-align: center;
+    color: springgreen;
+
+    background-color: rgb(31, 31, 31);
+    outline: hidden;
+    outline-color: black;
+}
+
+img{
+    background-color: white;
+    border: 3px solid cyan;
+    border-radius: 12px;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+.flexBoxHorizontal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0vh;
+    margin-left: 0vw;
+}

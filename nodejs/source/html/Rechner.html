@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <meta charset="utf8">
+        <title>Rechner</title>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/rechner.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
+
+    </head>
+    <body class="rechner">
+        <script src="../js/rechner.js"></script>
+
+        <div class="flexBox">
+            <div class="paddingRight">
+                <ul class="unsortedNavigator">
+                    <li><form>
+                        <input type="button" value="Startseite" onclick="location.href='index.html'" class="navigatorBtn button defaultText" name="Startseite">
+                    </form></li>
+                    <li>
+                        <hr class="lineNavigator">
+                    </li>
+                    <li><form>
+                        <input type="button" value="Übersicht" onclick="location.href='Uebersicht.html'" class="navigatorBtn button defaultText">
+                    </form></li>
+                    <li>
+                        <hr class="lineNavigator">
+                    </li>
+                    <li><form>
+                        <input type="button" value="Graph" onclick="location.href='Graph.html'" class="navigatorBtn button defaultText">
+                    </form></li>
+                    <li>
+                        <hr class="lineNavigator">
+                    </li>
+                    <li><form>
+                        <input type="button" value="Tabelle" onclick="location.href='Tabelle.html'" class="navigatorBtn button defaultText">
+                    </form></li>
+                    <li>
+                        <hr class="lineNavigator">
+                    </li>
+                    <li><form>
+                        <input type="button" value="Rechner" onclick="location.href='Rechner.html'" class="navigatorBtn button defaultText">
+                    </form></li>
+                </ul>
+            </div>
+            <div class="flexBoxHorizontal">
+                <h1 class="defaultHeadder" id="Headline">Rechner</h1>
+                <hr class="lineHeadding">
+                <div>
+                    <form>
+                        <table border="1" class="rechner">
+                            <tr>
+                                <div class="rechnerOutput">
+                                    <p class="defaultText rechnerOutputText" id="rechnerOutputBox">Hier könnte Ihre Berechnung stehen!</p> <br>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="7" name="7" class="button rechnerBtn defaultText" onclick="onClickRechner(7)"></td>
+                                <td><input type="button" value="8" name="8" class="button rechnerBtn defaultText" onclick="onClickRechner(8)"></td>
+                                <td><input type="button" value="9" name="9" class="button rechnerBtn defaultText" onclick="onClickRechner(9)"></td>
+                                <td><input type="button" value="+" name="+" class="button rechnerBtn defaultText" onclick="onClickRechner('+')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="4" name="4" class="button rechnerBtn defaultText" onclick="onClickRechner(4)"></td>
+                                <td><input type="button" value="5" name="5" class="button rechnerBtn defaultText" onclick="onClickRechner(5)"></td>
+                                <td><input type="button" value="6" name="6" class="button rechnerBtn defaultText" onclick="onClickRechner(6)"></td>
+                                <td><input type="button" value="-" name="-" class="button rechnerBtn defaultText" onclick="onClickRechner('-')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="1" name="1" class="button rechnerBtn defaultText" onclick="onClickRechner(1)"></td>
+                                <td><input type="button" value="2" name="2" class="button rechnerBtn defaultText" onclick="onClickRechner(2)"></td>
+                                <td><input type="button" value="3" name="3" class="button rechnerBtn defaultText" onclick="onClickRechner(3)"></td>
+                                <td><input type="button" value="x" name="*" class="button rechnerBtn defaultText" onclick="onClickRechner('*')"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="<--" name="del" class="button rechnerBtn defaultText" onclick="onClickRechner('back')" ></td>
+                                <td><input type="button" value="0" name="0" class="button rechnerBtn defaultText" onclick="onClickRechner(0)"></td>
+                                <td><input type="button" value="/" name="/" class="button rechnerBtn defaultText" onclick="onClickRechner('/')"></td>
+                                <td><input type="button" value="=" name="=" class="button rechnerBtn defaultText" onclick="calculate()"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            
+            <div>
+                <ul class="outputHistory" id="outputHistory">
+                    <p class="outputHeadline">History</p>
+                    <hr class="lineOutput">
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
+</html>

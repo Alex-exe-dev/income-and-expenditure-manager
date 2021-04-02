@@ -1,0 +1,46 @@
+@keyframes resizeButton{
+    from {width: 6vw;}
+    to {width: 7vw;}
+}
+
+.unsortedNavigator {
+    background-color: #263238;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 1vw;
+    width: 6vw;
+    height: 100vh;
+    margin-top: 0vh;
+    margin-left: 0px;
+}
+
+.paddingRight {
+    margin-right: 2vw;
+}
+
+.navigatorBtn {
+    border: 0.2vw solid transparent;
+    border-radius: 1vw;
+    cursor:pointer;
+    background-color: transparent;
+    border-right-color: cyan;
+
+    width: 6vw;
+    height: 5vh;
+    margin-top: 0.2vh;
+    padding-top: 0vh;
+}
+
+.navigatorBtn:hover {
+    animation-name: resizeButton;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+
+}
+
+.lineNavigator {
+    padding: 0;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+    border: 0.2vh solid cyan;
+}
