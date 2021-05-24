@@ -2,6 +2,7 @@
     [ { "path": "source/styles", "cType": "text/css" }
     , { "path": "source/media", "cType": "image/jpeg" }
     , { "path": "source/html", "cType": "text/html" }
+    , { "path": "source/html", "cType": "text/html/gamefeal"}
     , { "path": "source/js", "cType": "text/js"}
     ]
 

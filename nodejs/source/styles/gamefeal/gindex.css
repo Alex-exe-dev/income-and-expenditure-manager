@@ -1,0 +1,21 @@
+body
+{
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+.verFlex {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.horFlex {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+
+}

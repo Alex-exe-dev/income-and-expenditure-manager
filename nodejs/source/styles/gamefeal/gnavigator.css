@@ -1,0 +1,16 @@
+.navigatorBtn {
+    border: lightsteelblue;
+
+}
+
+.navigator {
+    height: 6.4vh;
+    background-color: white;
+}
+
+.navigatorImg {
+    height: 6vh;
+    width: 3vw;
+    border: 2px cyan solid;
+    border-radius: 5px;
+}
