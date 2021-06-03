@@ -1,6 +1,13 @@
 .navigatorBtn {
-    border: lightsteelblue;
-
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: 125%;
+    text-align: center;
+    cursor: pointer;
+}
+.navigatorSpace {
+    margin-left: 1vw;
 }
 
 .navigator {
@@ -13,4 +20,11 @@
     width: 3vw;
     border: 2px cyan solid;
     border-radius: 5px;
+}
+
+.navigatorSelect {
+    border-bottom: 3px solid black;
+    border-radius: 4vw;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
 }

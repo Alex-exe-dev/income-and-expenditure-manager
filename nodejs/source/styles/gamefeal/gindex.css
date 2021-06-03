@@ -1,9 +1,4 @@
-body
-{
-    background-color: whitesmoke;
-    margin: 0px;
-    padding: 0px;
-}
+
 
 .verFlex {
     margin: 0px;
@@ -19,3 +14,4 @@ body
     flex-direction: row;
 
 }
+

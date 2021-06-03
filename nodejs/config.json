@@ -1,8 +1,9 @@
 { "baseDirs" :
     [ { "path": "source/styles", "cType": "text/css" }
+    , { "path": "source/styles/gamefeal", "cType": "text/css" }
     , { "path": "source/media", "cType": "image/jpeg" }
     , { "path": "source/html", "cType": "text/html" }
-    , { "path": "source/html", "cType": "text/html/gamefeal"}
+    , { "path": "source/html/gamefeal", "cType": "text/html"}
     , { "path": "source/js", "cType": "text/js"}
     ]
 
