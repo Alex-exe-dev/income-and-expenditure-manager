@@ -16,10 +16,8 @@
 }
 
 .navigatorImg {
-    height: 6vh;
-    width: 3vw;
-    border: 2px cyan solid;
-    border-radius: 5px;
+    height: 5vh;
+    width: 2.5vw;
 }
 
 .navigatorSelect {
