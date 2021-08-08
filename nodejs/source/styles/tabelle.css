@@ -1,0 +1,106 @@
+@keyframes btnAnimation {
+    from {background-color: rgb(31, 31, 31);}
+    to {background-color: springgreen;}
+    from {color: springgreen;}
+    to {color: rgb(31, 31, 31);}
+}
+
+.tableScroller {
+    overflow-y: scroll;
+    width: 81vw;
+    height: 60vh;
+    background-color: #283338;
+
+    margin-top: 4vh;
+    border-radius: 1vw;
+    border: aqua solid 0.1vw;
+}
+
+
+
+.downloadButton {
+    margin-left: 13vw;
+    margin-top: 3vh;
+    margin-right: 0vw;
+
+    border: aqua solid 0.2vw;
+    border-radius: 2vw;
+    height: 8vh;
+    width: 10vw;
+    color: springgreen;
+    background-color: rgb(31, 31, 31);
+}
+
+.downloadButton:hover {
+    animation-name: btnAnimation;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    border-color: rgb(0, 92, 92);
+}
+
+#submitBtn {
+    background-color: rgb(31, 31, 31);
+    color: springgreen;
+    border: aqua solid 0.2vw;
+    border-radius: 1vw;
+    height: 4.3vh;
+}
+
+#submitBtn:hover {
+    animation-name: btnAnimation;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    border-color: rgb(0, 92, 92);
+}
+
+.inputDiv {
+    margin-left: 3.5vw;
+}
+
+.underline {
+    width: 55vw;
+    margin-top: -6vh;
+    border-color: white;
+}
+
+.hedding {
+    color: white;
+    margin-left: 23vw;
+}
+
+.valueTable {
+    margin-left: 1vw;
+    width: 79vw;
+}
+
+.value {
+    text-align: right;
+}
+
+.minus {
+    color: red;
+}
+
+.plus {
+    color: aqua;
+}
+
+.reason {
+    text-align: left;
+    padding-left: 5vw;
+}
+
+.date {
+    text-align: left;
+}
+
+.zusammenfassung {
+    margin-left: 2vw;
+    margin-top: 4vh;
+    
+    background-color: #283338;
+    height: 60vh;
+    width: 7vw;
+    border-radius: 1vw;
+    border: aqua solid 0.1vw;
+}
