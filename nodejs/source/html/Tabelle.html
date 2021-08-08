@@ -7,53 +7,80 @@
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
         <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
         <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
+        <link rel="stylesheet" type="text/css" href="../styles/tabelle.css">
 
     </head>
-    <body>
+    <body class="hideBar">
+        <script src="../js/manageData.js"></script>
+        <script src="../js/hideExtensions.js"></script>
+
         <div class="flexBox">
             <div class="paddingRight">
                 <ul class="unsortedNavigator">
                     <li><form>
-                        <input type="button" value="Startseite" onclick="location.href='index.html'" class="navigatorBtn button defaultText" name="Startseite">
+                        <input type="button" value="Startseite" onclick="location.href='source/html/index.html'" class="navigatorBtn button defaultText" name="Startseite">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Übersicht" onclick="location.href='Uebersicht.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Übersicht" onclick="location.href='source/html/Uebersicht.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Graph" onclick="location.href='Graph.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Graph" onclick="location.href='source/html/Graph.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Tabelle" onclick="location.href='Tabelle.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Tabelle" onclick="location.href='source/html/Tabelle.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Rechner" onclick="location.href='Rechner.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Rechner" onclick="location.href='source/html/Rechner.html'" class="navigatorBtn button defaultText">
                     </form></li>
+                    <li>
+                        <input type="button" value="Anmelden" onclick="openLoginWindow()" class="button defaultText loginBtn" id="loginBtn">
+                    </li>
                 </ul>
             </div>
             <div class="flexBoxHorizontal">
                 <div>
-                    <h1>Tabelle</h1>
-                    <hr>
-                    <p>Not available!</p>
+                    <div class="flexBox">
+                        <h1 class="defaultHeadder hedding">Tabellarische Ansicht</h1>
+                        <form>
+                            <input type="button" value="Download your Data" class="downloadButton" onclick="exportAndDownloadFile('export', 'Dies ist ein Text LUL')">
+                        </form>
+
+                    </div>
+
+                    <hr class="underline">
+
                 </div>
-                <div>
-                    <form method="post">
-                        Datum eingeben:<input type="text" name="datum" class="inputTextFeld">
-                        Gelbetrag eingeben:<input type="password" name="geldadded" class="inputTextFeld">€
-                        <input type="submit" value="Hallo" class="button rechnerBtn">
+                <div class="inputDiv">
+                    <form class="defaultText">
+                        Datum eingeben:  <input type="date" name="datum" class="inputTextFeld" id="date">
+                        Gelbetrag eingeben:  <input type="text" name="geldadded" class="inputTextFeld" id="value"> €     
+                        <input type="button" value="Hinzufügen" id="submitBtn" onclick="addTableElement(null, null, null, false)">
                     </form>
+                </div>
+                <div class="flexBox">
+                    <div class="tableScroller hideBar">
+                        <table id="tableScroller" class="valueTable">
+                        </table>
+                    </div>
+                    <div class="zusammenfassung">
+
+                    </div>
+                </div>
+
+                <div class="serverStatus ready" id="ServerStatus">
+                    <p id="ServerStatusText" class="defaultText serverText">Server bereit</p>
                 </div>
             </div>
 
@@ -69,6 +96,6 @@
 
         
     </body>
-
+    
 
 </html>

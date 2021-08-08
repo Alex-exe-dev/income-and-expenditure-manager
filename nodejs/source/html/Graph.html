@@ -8,36 +8,40 @@
         <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
     </head>
     <body>
+        <script src="../js/hideExtensions.js"></script>
         <div class="flexBox">
             <div class="paddingRight">
                 <ul class="unsortedNavigator">
                     <li><form>
-                        <input type="button" value="Startseite" onclick="location.href='index.html'" class="navigatorBtn button defaultText" name="Startseite">
+                        <input type="button" value="Startseite" onclick="location.href='source/html/index.html'" class="navigatorBtn button defaultText" name="Startseite">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Übersicht" onclick="location.href='Uebersicht.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Übersicht" onclick="location.href='source/html/Uebersicht.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Graph" onclick="location.href='Graph.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Graph" onclick="location.href='source/html/Graph.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Tabelle" onclick="location.href='Tabelle.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Tabelle" onclick="location.href='source/html/Tabelle.html'" class="navigatorBtn button defaultText">
                     </form></li>
                     <li>
                         <hr class="lineNavigator">
                     </li>
                     <li><form>
-                        <input type="button" value="Rechner" onclick="location.href='Rechner.html'" class="navigatorBtn button defaultText">
+                        <input type="button" value="Rechner" onclick="location.href='source/html/Rechner.html'" class="navigatorBtn button defaultText">
                     </form></li>
+                    <li>
+                        <input type="button" value="Anmelden" onclick="openLoginWindow()" class="button defaultText loginBtn" id="loginBtn">
+                    </li>
                 </ul>
             </div>
             <div>
