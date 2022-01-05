@@ -44,7 +44,7 @@ function addTableElement(date, reason, value, load) {
     newElementReason.innerHTML = "<td>" + reason + "</td>" 
     newElementValue.innerHTML = "<td>" + value + "</td>"
     
-    //if (load != true) XMLRequest('insert', 'Hallo123', '456789', date, reason, value, getDataLOG, 59);
+    if (load != true) XMLRequest('insert', 'Hallo123', '456789', date, reason, value, getDataLOG, 59);
 
 
     //create a singel table entry to align everything correct
@@ -52,16 +52,6 @@ function addTableElement(date, reason, value, load) {
     newElement.appendChild(newElementReason)
     newElement.appendChild(newElementValue)
     scroller.insertBefore(newElement, scroller.childNodes[0])
-
-    //create local saves of variables
-    if (!(localStorage.getItem("date") == null)) {
-        console.log(localStorage.getItem("date"))
-        var dateLocal = localStorage.getItem("date");
-        localStorage.setItem("date", dateLocal + "," + date)
-    } else {
-        localStorage.setItem("date", "['" + date + "']")
-    }
-    
 }
 
 //Create XMLRequest
