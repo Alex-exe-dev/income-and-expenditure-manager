@@ -1,13 +1,13 @@
 { "baseDirs" :
-    [ { "path": "source/styles", "cType": "text/css" }
-    , { "path": "source/styles/gamefeal", "cType": "text/css" }
-    , { "path": "source/styles/login", "cType": "text/css" }
-    , { "path": "source/media", "cType": "image/jpeg" }
-    , { "path": "source/html", "cType": "text/html" }
-    , { "path": "source/html/gamefeal", "cType": "text/html"}
-    , { "path": "source/html/login", "cType": "text/html"}
-    , { "path": "source/js", "cType": "text/js"}
+    [ { "path": "nodejs/source/styles", "cType": "text/css" }
+    , { "path": "nodejs/source/styles/gamefeal", "cType": "text/css" }
+    , { "path": "nodejs/source/styles/login", "cType": "text/css" }
+    , { "path": "nodejs/source/media", "cType": "image/jpeg" }
+    , { "path": "nodejs/source/html", "cType": "text/html" }
+    , { "path": "nodejs/source/html/gamefeal", "cType": "text/html"}
+    , { "path": "nodejs/source/html/login", "cType": "text/html"}
+    , { "path": "nodejs/source/js", "cType": "text/js"}
     ]
 
-, "defaultRedirect" : "/source/html/index.html"
+, "defaultRedirect" : "nodejs/source/html/index.html"
 }

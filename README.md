@@ -2,7 +2,11 @@
 This will hopefully sometimes be a website where you can manage your income and expenditure!
 
 
-The index.js script creates a server on your loacalhost for you (Port:80). It was created by @0bMERLIN (https://github.com/0bMERLIN).
+The index.js script creates a server on your loacalhost for you (Port:80). It was partly created by @0bMERLIN (https://github.com/0bMERLIN).
 
 If you try to run this code yourself you might notice that some files in /media and /styles are missing. This is due to copyright reasons.
-You should find all filenames somewhere in the css / html files. After that you can simply google the fonts to compleate your build.
+You should find all filenames somewhere in the css / html files. After that you can simply google the fonts to complete your build.
+
+The font of the site is downloadable here: https://fonts.google.com/specimen/Sansita+Swashed
+
+Currently this site doesn't get displayed properly in Firefox; It should work on Google Chrome though.

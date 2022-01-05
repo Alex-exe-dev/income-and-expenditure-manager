@@ -1,7 +1,8 @@
 const FileSystem = require('fs')
 const Http = require('https')
+const { getSystemErrorMap } = require('util')
 
-let configPath = "config.json"
+let configPath = "./nodejs/config.json"
 let baseDirs = JSON.parse(FileSystem.readFileSync(configPath)).baseDirs
 let defaultRedirect = JSON.parse(FileSystem.readFileSync(configPath)).defaultRedirect
 
@@ -10,8 +11,8 @@ const options = {
   cert: FileSystem.readFileSync('cert.pem')
 }
 
-const SQL = require('./backend/mysql_Implementation/connectToDataBase.js');
-const LoginRegister = require('./backend/mysql_Implementation/LoginRegister.js');
+//const SQL = require('./backend/mysql_Implementation/connectToDataBase.js');
+//const LoginRegister = require('./backend/mysql_Implementation/LoginRegister.js');
 const checkURL = require('./backend/URL/checkURLS_Redirect.js');
 
 
@@ -54,7 +55,7 @@ let serverFn = (request, response) => {
     const userId = params.get("id")
     const userKey = params.get("key")
 
-
+    /*
     //handle API requests
     if (action == "insert") {
       //get required variables for the SQL insert
@@ -92,7 +93,7 @@ let serverFn = (request, response) => {
       result = "es ist ein unbekannter Fehler aufgetreten!";
       response.end(result);
     }
-
+    */
 
   } else {
 
@@ -119,5 +120,5 @@ let serverFn = (request, response) => {
 }
 
 let server = Http.createServer(options, serverFn)
-server.listen(80)
+server.listen(8000)
 console.log("listening!")

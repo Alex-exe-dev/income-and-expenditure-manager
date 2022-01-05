@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chartjs": "^0.3.24",
+    "mysql": "^2.18.1"
+  }
+}
