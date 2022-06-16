@@ -1,5 +1,5 @@
 const FileSystem = require('fs')
-const Http = require('https')
+const Https = require('https')
 const { getSystemErrorMap } = require('util')
 
 let configPath = "./nodejs/config.json"
@@ -55,45 +55,6 @@ let serverFn = (request, response) => {
     const userId = params.get("id")
     const userKey = params.get("key")
 
-    /*
-    //handle API requests
-    if (action == "insert") {
-      //get required variables for the SQL insert
-      const date = params.get("date");
-      const reason = params.get("reason");
-      const value = params.get("value");
-      result = SQL.insert(userId, userKey, date, reason, value);
-      response.end(result);
-
-    } else if (action == "get") {
-
-      const index = params.get("index");
-      SQL.get(userId, userKey, index, function(GETResult, connection) {
-        response.end(GETResult + "");
-        connection.destroy();
-      });    
-    } else if (action == "login") {
-      var username = params.get("username");
-      var password = params.get("key");
-      let keepLoggedIn = params.get("kmli");
-      var ipaddress = request.connection.remoteAddress;
-      LoginRegister.login(username, password, ipaddress, function (result, dbcon) {
-        if (result == "invalidIp") {
-          dbcon.end();
-          response.writeHead(200)
-          response.end("invalidIp");
-
-        } else {
-          dbcon.destroy();
-          response.writeHead(200)
-          response.end(result);
-        }
-      })
-    }else {
-      result = "es ist ein unbekannter Fehler aufgetreten!";
-      response.end(result);
-    }
-    */
 
   } else {
 
@@ -119,6 +80,6 @@ let serverFn = (request, response) => {
   }
 }
 
-let server = Http.createServer(options, serverFn)
+let server = Https.createServer(options, serverFn)
 server.listen(8000)
 console.log("listening!")

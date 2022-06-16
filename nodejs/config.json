@@ -6,7 +6,7 @@
     , { "path": "nodejs/source/html", "cType": "text/html" }
     , { "path": "nodejs/source/html/gamefeal", "cType": "text/html"}
     , { "path": "nodejs/source/html/login", "cType": "text/html"}
-    , { "path": "nodejs/source/js", "cType": "text/js"}
+    , { "path": "nodejs/source/js", "cType": "text/javascript"}
     ]
 
 , "defaultRedirect" : "nodejs/source/html/index.html"
