@@ -1,6 +1,10 @@
 {
+"name": "earwsite",
+"scripts": {
+  "Index": "node ./nodejs/index.js"
+},
+
   "dependencies": {
-    "chartjs": "^0.3.24",
-    "mysql": "^2.18.1"
+    "chartjs": "^0.3.24"
   }
 }
