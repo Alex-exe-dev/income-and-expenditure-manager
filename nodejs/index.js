@@ -1,15 +1,15 @@
 const FileSystem = require('fs')
-const Https = require('https')
+const Https = require('http')
 const { getSystemErrorMap } = require('util')
 
 let configPath = "./nodejs/config.json"
 let baseDirs = JSON.parse(FileSystem.readFileSync(configPath)).baseDirs
 let defaultRedirect = JSON.parse(FileSystem.readFileSync(configPath)).defaultRedirect
 
-const options = {
+/*const options = {
   key: FileSystem.readFileSync('key.pem'),
   cert: FileSystem.readFileSync('cert.pem')
-}
+}*/
 
 //const SQL = require('./backend/mysql_Implementation/connectToDataBase.js');
 //const LoginRegister = require('./backend/mysql_Implementation/LoginRegister.js');
@@ -80,6 +80,6 @@ let serverFn = (request, response) => {
   }
 }
 
-let server = Https.createServer(options, serverFn)
+let server = Https.createServer(/*options,*/ serverFn)
 server.listen(8000)
 console.log("listening!")
