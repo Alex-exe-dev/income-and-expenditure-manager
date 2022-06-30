@@ -5,8 +5,8 @@ function dropHandler(event) {
    
     reader.addEventListener('load', (eventlistener) => {
         const jsonData = eventlistener.target.result;
-        localStorage.setItem("jsonData", jsonData)
-        console.log(jsonData)
+        localStorage.setItem("jsonData", jsonData);
+        dragLeaveHandler();
     });
 
     reader.readAsText(file)
@@ -16,10 +16,12 @@ function dropHandler(event) {
 function dragOverHandler(event) {
     event.preventDefault();
     var zone = document.getElementById("dragndrop");
-    zone.classList.add("hover");
+    zone.classList.add("dragHover");
+    document.getElementById("headLine").innerHTML = "Loslassen zum Einfügen"
 }
 
 function dragLeaveHandler() {
     var zone = document.getElementById("dragndrop");
-    zone.classList.remove("hover")
+    zone.classList.remove("dragHover");
+    document.getElementById("headLine").innerHTML = "Tabellarische Ansicht"
 }
