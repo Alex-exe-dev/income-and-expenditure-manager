@@ -26,7 +26,7 @@ function addData(date, reason, value, calc) {
 }
 
 function loadData() {
-    if (localStorage.getItem("jsonData") == null) return;
+    if (localStorage.getItem("jsonData") == null) return false;
     return JSON.parse(localStorage.getItem("jsonData"))
 }
 

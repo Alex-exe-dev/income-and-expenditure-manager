@@ -64,9 +64,8 @@ function exportAndDownloadFile() {
         XMLRequest('get', 'Hallo123', '456789', "na", "na", "na", dataCollector, i);
     }
     */
-    if (localStorage.getItem('data') != null) {
-        var exptData = localStorage.getItem('data');
-        console.log(exptData);
+    if (loadData() != false) {
+        var exptData = JSON.stringify(loadData());
 
         //Create Element to click for download
         var exptElement = document.createElement('a');
