@@ -3,7 +3,8 @@ This will hopefully sometimes be a website where you can manage your income and 
 
 
 The index.js script creates a server on your loacalhost for you (Port:8000). It was partly created by @0bMERLIN (https://github.com/0bMERLIN).
-Currently it only creates a http server but you can easily change it to be a https servy by changing line 2 to 
+
+Currently it only creates a http server but you can easily change it to be a https server by changing line 2 to 
 
 ```const Https = require('https')```
 
