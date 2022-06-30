@@ -18,11 +18,11 @@ function dragOverHandler(event) {
     event.preventDefault();
     var zone = document.getElementById("dragndrop");
     zone.classList.add("dragHover");
-    document.getElementById("headLine").innerHTML = "Loslassen zum Einfügen"
+    if (document.getElementById("headLine") != null)document.getElementById("headLine").innerHTML = "Loslassen zum Einfügen";
 }
 
 function dragLeaveHandler() {
     var zone = document.getElementById("dragndrop");
     zone.classList.remove("dragHover");
-    document.getElementById("headLine").innerHTML = "Tabellarische Ansicht"
+    if (document.getElementById("headLine") != null) document.getElementById("headLine").innerHTML = "Tabellarische Ansicht";
 }

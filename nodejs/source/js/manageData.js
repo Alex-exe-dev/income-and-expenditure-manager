@@ -14,7 +14,6 @@ window.onload = function() {
     var jsonData = loadData();
     console.log(jsonData);
     for (var i = 0;  i < jsonData.history.length; i++) {
-        console.log(i)
         addTableElement(jsonData.history[i].date, jsonData.history[i].reason, jsonData.history[i].value, false, true);
     }
 }
