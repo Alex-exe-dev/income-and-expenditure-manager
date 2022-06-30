@@ -1,3 +1,5 @@
+//import * as jsonManager from './JSONManager_DataManager.js';
+
 var currentElement = 0;
 var loading = false;
 
@@ -49,22 +51,10 @@ function addTableElement(date, reason, value, load) {
     newElement.appendChild(newElementReason)
     newElement.appendChild(newElementValue)
     scroller.insertBefore(newElement, scroller.childNodes[0])
+
+    addData(date, reason, value, false)
 }
 
-function addTableElementSLQ(date, reason, value, load) {
-
-    if (localStorage.getItem('data') != null) {
-        var currentDataJSON =  {
-            dates: {}
-        }
-        //JSON.parse(localStorage.getItem("data"));
-        currentDataJSON.dates[date.reason] = reason;
-        currentDataJSON.dates[date] = value;
-        console.log(currentDataJSON);
-
-    }
-
-}
 
 
 //#####################################################EXPORT ZONE#####################
@@ -88,7 +78,6 @@ function exportAndDownloadFile() {
         document.body.appendChild(exptElement);
         exptElement.click();
         document.body.removeChild(exptElement);
-        addTableElementSLQ( "10.03.2005", "Reason", 1, false)
     } else {
         window.alert("Es wurden leider keine Daten von Ihnen gefunden!");
         console.log(localStorage.getItem('data'));
@@ -96,3 +85,5 @@ function exportAndDownloadFile() {
     }
 
 }
+
+

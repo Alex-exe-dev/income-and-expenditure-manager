@@ -9,11 +9,12 @@
         <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
         <link rel="stylesheet" type="text/css" href="../styles/tabelle.css">
 
+
     </head>
     <body class="hideBar">
         <script src="../js/manageData.js"></script>
         <script src="../js/hideExtensions.js"></script>
-
+        <script src="../js/JSONManager_DataManager.js"></script>
         <div class="flexBox">
             <div class="paddingRight">
                 <ul class="unsortedNavigator">
@@ -63,7 +64,7 @@
                     <form class="defaultText">
                         Datum eingeben:  <input type="date" name="datum" class="inputTextFeld" id="date">
                         Gelbetrag eingeben:  <input type="text" name="geldadded" class="inputTextFeld" id="value"> €     
-                        <input type="button" value="Hinzufügen" id="submitBtn" onclick="addTableElement(null, null, null, false)">
+                        <input type="button" value="Hinzufügen" id="submitBtn" onclick="addTableElement(null, null, null, false);">
                     </form>
                 </div>
                 <div class="flexBox">
