@@ -1,9 +1,30 @@
 //import * as jsonManager from './JSONManager_DataManager.js';
+window.onload = function() {
+    //create right URL
+    if (document.title == "Startseite") {
+        window.history.pushState("Index", document.title, "/");
+    } else if (document.title == "Übersicht") {
+        window.history.pushState("Uebersicht", document.title, "/Uebersicht")
+    } else {
+        window.history.pushState("TestString", document.title, "/" + document.title)
+    }
+
+    //actually load data
+    if (loadData() == false) return;
+    var jsonData = loadData();
+    console.log(jsonData);
+    for (var i = 0;  i < jsonData.history.length; i++) {
+        console.log(i)
+        addTableElement(jsonData.history[i].date, jsonData.history[i].reason, jsonData.history[i].value, false, true);
+    }
+}
+
+
 
 var currentElement = 0;
 var loading = false;
 
-function addTableElement(date, reason, value, load) {
+function addTableElement(date, reason, value, load, onload) {
     if (date == null && reason == null && value == null && load == false) {
         var date = document.getElementById("date").value
         var reason = "n/A"
@@ -26,7 +47,7 @@ function addTableElement(date, reason, value, load) {
 
     //check if values are empty
     if (value == "" || date == "") {
-        window.alert("Bitte gib einen Geldbetrag und ein gültiges Datum an!")
+        if (!(onload)) window.alert("Bitte gib einen Geldbetrag und ein gültiges Datum an!")
         return;
     } else {
         document.getElementById("value").value = ""
@@ -52,6 +73,7 @@ function addTableElement(date, reason, value, load) {
     newElement.appendChild(newElementValue)
     scroller.insertBefore(newElement, scroller.childNodes[0])
 
+    if (onload) return;
     addData(date, reason, value, false)
 }
 
@@ -84,5 +106,3 @@ function exportAndDownloadFile() {
     }
 
 }
-
-

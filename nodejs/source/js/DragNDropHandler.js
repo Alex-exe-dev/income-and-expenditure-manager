@@ -7,6 +7,7 @@ function dropHandler(event) {
         const jsonData = eventlistener.target.result;
         localStorage.setItem("jsonData", jsonData);
         dragLeaveHandler();
+        location.reload();
     });
 
     reader.readAsText(file)

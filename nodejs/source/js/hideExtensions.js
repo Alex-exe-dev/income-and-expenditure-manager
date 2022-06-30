@@ -1,4 +1,3 @@
-
 window.onload = function () {
     if (document.title == "Startseite") {
         window.history.pushState("Index", document.title, "/");

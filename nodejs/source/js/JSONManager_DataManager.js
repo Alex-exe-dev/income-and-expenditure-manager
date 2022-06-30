@@ -41,7 +41,7 @@ function createBasicJSONElement() {
             [
                 {
                 date: 0,
-                value: 0,
+                value: "0",
                 reason: "Account creation",
                 }
             ],
