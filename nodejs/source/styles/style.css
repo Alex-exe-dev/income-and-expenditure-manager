@@ -1,6 +1,6 @@
 @font-face {
     font-family: SansitaSwashed;
-    src: url(SansitaSwashed-VariableFont_wght.ttf)
+    src: url('SansitaSwashed-VariableFont_wght.ttf')
 }
 
 @keyframes textFieldAnimation {
