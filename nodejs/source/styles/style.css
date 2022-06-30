@@ -129,3 +129,7 @@ img{
 .servererror {
     background-color: darkred;
 }
+
+.hover {
+    background-color: lightgreen;
+}

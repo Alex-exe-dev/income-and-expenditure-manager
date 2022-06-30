@@ -15,6 +15,7 @@
         <script src="../js/manageData.js"></script>
         <script src="../js/hideExtensions.js"></script>
         <script src="../js/JSONManager_DataManager.js"></script>
+        <script src="../js/DragNDropHandler.js"></script>
         <div class="flexBox">
             <div class="paddingRight">
                 <ul class="unsortedNavigator">
@@ -47,7 +48,7 @@
                     </form></li>
                 </ul>
             </div>
-            <div class="flexBoxHorizontal">
+            <div class="flexBoxHorizontal" ondrop="dropHandler(event)" ondragover="dragOverHandler(event);" id="dragndrop" ondragleave="dragLeaveHandler()">
                 <div>
                     <div class="flexBox">
                         <h1 class="defaultHeadder hedding">Tabellarische Ansicht</h1>
