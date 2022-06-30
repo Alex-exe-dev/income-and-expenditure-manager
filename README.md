@@ -8,7 +8,7 @@ Currently it only creates a http server but you can easily change it to be a htt
 
 ```const Https = require('https')```
 
-and remove the comme ```/* */``` in line 9 to 12. 
+and remove the comments (```/* */```) in line 9 to 12. 
 After that you need to generate a ```key.pem``` and a ```cert.pem``` for example with openssl to enable http over tls.
 
 If you try to run this code yourself you might notice that some files in /media and /styles are missing. This is due to copyright reasons.
