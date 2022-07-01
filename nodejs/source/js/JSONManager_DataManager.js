@@ -95,3 +95,13 @@ function createJsonFileGraph() {
     } 
     return chartData;
 }
+
+function deleteData() {
+    if (!(localStorage.getItem("jsonData"))) {
+        window.alert("Es sind keine Daten von Ihnen gespeichert!")
+        return;
+    }
+    localStorage.removeItem("jsonData");
+    location.href="./";
+    return;
+}

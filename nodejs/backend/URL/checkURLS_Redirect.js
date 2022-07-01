@@ -9,6 +9,10 @@ module.exports = {
                 return "nodejs/source/html/Rechner.html";
             case "/uebersicht":
                 return "nodejs/source/html/Uebersicht.html";
+            case "/meine%20daten":
+                return "nodejs/source/html/MeineDaten.html";
+            case "/daten%20loeschen":
+                return "nodejs/source/html/DatenLoeschen.html";
             default:
                 return null;
         }

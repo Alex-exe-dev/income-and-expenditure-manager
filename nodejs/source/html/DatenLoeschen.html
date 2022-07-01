@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="de-de">
+    <head>
+        <meta charset="utf8">
+        <title>Daten loeschen</title>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
+        <link rel="stylesheet" type="text/css" href="../styles/datenLoeschen.css">
+
+        <script src="../js/hideExtensions.js"></script>
+        <script src="../js/JSONManager_DataManager.js"></script>
+        <script src="../js/modalHandler.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="reallyDeleteAlert" class="alert">
+            <div class="alertMessage">
+                <div class="alertHeader">
+                    <h1>Daten wirklich unwiederruflich löschen?</h1>
+                </div>
+                <div class="alertText">
+                    <p>Nach dieser Aktion können Ihre Daten nicht wiederhergestellt werden.<br>
+                    Wenn Sie dies verstanden haben klicken Sie bitte auf <a style="cursor: pointer;" onclick="deleteData()">löschen</a>.
+                    </p>
+                    <div style="word-spacing: 4rem;">
+                        <button type="button" class="alertBackBtn" onclick="closeDeleteModal()">Zurück</button>
+                        <button type="button" class="alertDeleteBtn" onclick="window.alert('Bitte lesen Sie sich die oben stehende Meldung bitte genau durch!')">Löschen</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="flexBoxHorizontal">
+            <h1 class="defaultHeadder heading">Daten Löschen</h1>
+            <br>
+            <p class="defaultText text">Auf dieser Seite können Sie alle Daten löschen, die lokal von Ihnen in Ihrem browser gespeichert sind.<br>
+            Dies sorgt dafür, dass alle eingegebenen Werte unwiederruflich gelöscht werden.<br>
+            Alles was also gelöscht ist, kann nicht wieder hergestellt werden.<br>
+            Sollten Sie noch ein Export-File haben, können Sie dieses jederzeit wieder hochladen und die enthaltenen Daten nutzen.<br>
+            Online werden keine Daten von Ihnen erhoben, dementsprechend kann und wird dort nichts gelöscht werden.
+            </p>
+
+            <div class="btnContainer">
+                <button type="button" class="buttonD buttonBack" onclick="location.href='./'">Zurück zur Website</button>
+                <button type="button" class="buttonD buttonDelete" onclick="
+
+                if (!(localStorage.getItem('jsonData'))) {
+                window.alert('Es sind keine Daten von Ihnen gespeichert!');
+                return;
+                };
+                deleteModal()">Daten Löschen</button>
+            </div>
+        </div>
+
+        <div class="lowerEnd lowEnd">
+            <a href="./nodejs/source/html/MeineDaten.html" class="leButton">Meine Daten</a>
+            <br>
+            <a href="./nodejs/source/html/DatenLoeschen.html" class="leButton">Meine lokalen Daten löschen</a>
+        </div>
+    </body>
+</html>
