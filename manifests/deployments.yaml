@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aerw
+  labels:
+    app: aerw
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: aerw
+  template:
+    metadata:
+      labels:
+        app: aerw
+    spec:
+      containers:
+        - name: aerw
+          image: "aleexedev/aerw-site:latest"
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 0.5
+              memory: 128Mi
+          readinessProbe:
+            tcpSocket:
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 5
+            failureThreshold: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          livenessProbe:
+            tcpSocket:
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 5
+            failureThreshold: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+
+          ports:
+            - name: aerw
+              containerPort: 8000
+              protocol: TCP
