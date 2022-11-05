@@ -4,6 +4,8 @@ This will hopefully sometimes be a website where you can manage your income and 
 
 The index.js script creates a server on your loacalhost for you (Port:8000). It was partly created by @0bMERLIN (https://github.com/0bMERLIN).
 
+
+# Make this a https service instead of http
 Currently it only creates a http server but you can easily change it to be a https server by changing line 2 to 
 
 ```const Https = require('https')```
@@ -16,4 +18,8 @@ You should find all filenames somewhere in the css / html files. After that you 
 
 The font of the site is downloadable here: https://fonts.google.com/specimen/Sansita+Swashed
 
+# general information 
 Currently this site doesn't get displayed properly in Firefox; It should work on Google Chrome though.
+
+To create a data structure to use this side you need to open the tab "Tabelle" which will open the registration menue. All inserted data is only
+stored locally in your browser and will **not** be uploaded to the server.
