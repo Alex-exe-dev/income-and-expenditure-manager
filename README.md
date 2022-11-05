@@ -1,4 +1,4 @@
-# Website-only-calculator-works
+# Income and expenditure manager
 This will hopefully sometimes be a website where you can manage your income and expenditure!
 
 
