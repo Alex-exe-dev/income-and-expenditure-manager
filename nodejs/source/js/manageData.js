@@ -9,6 +9,13 @@ window.onload = function() {
         window.history.pushState("TestString", document.title, "/" + document.title)
     }
 
+    if (!(loadData())) {
+        var popup = window.open("/nodejs/source/html/login/register.html", "REGISTRIEREN", "directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=450,height=550");
+        if (popup == null)
+           alert('Bitte aktiviere PopUps, um dich zu registrieren!');
+    }
+        
+
     //actually load data
     if (loadData() == false) return;
     var jsonData = loadData();
@@ -16,6 +23,8 @@ window.onload = function() {
     for (var i = 0;  i < jsonData.history.length; i++) {
         addTableElement(jsonData.history[i].date, jsonData.history[i].reason, jsonData.history[i].value, false, true);
     }
+    var balance = document.getElementById("balance");
+    balance.innerHTML = "balance:<br>" + jsonData.balance;
 }
 
 
@@ -73,7 +82,18 @@ function addTableElement(date, reason, value, load, onload) {
     scroller.insertBefore(newElement, scroller.childNodes[0])
 
     if (onload) return;
-    addData(date, reason, value, false)
+
+    //safe/modify balance
+    var jsonData = loadData();
+    var balance = jsonData.balance;
+    balance = eval(balance + " + " + value);
+    jsonData.balance = balance;
+    localStorage.setItem("jsonData", JSON.stringify(jsonData))
+    var displayBalance = document.getElementById("balance");
+    displayBalance.innerHTML = "balance:<br>" + jsonData.balance;
+
+    //add other Data
+    addData(date, reason, value, false);
 }
 
 

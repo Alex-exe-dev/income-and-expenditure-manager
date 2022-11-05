@@ -8,7 +8,7 @@
 .tableScroller {
     overflow-y: scroll;
     width: 81vw;
-    height: 60vh;
+    height: 55vh;
     background-color: #283338;
 
     margin-top: 4vh;
@@ -98,8 +98,11 @@
     margin-left: 2vw;
     margin-top: 4vh;
     
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
     background-color: #283338;
-    height: 60vh;
+    height: 55vh;
     width: 7vw;
     border-radius: 1vw;
     border: aqua solid 0.1vw;

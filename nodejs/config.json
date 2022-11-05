@@ -3,6 +3,8 @@
     , { "path": "nodejs/source/media", "cType": "image/jpeg" }
     , { "path": "nodejs/source/html", "cType": "text/html" }
     , { "path": "nodejs/source/js", "cType": "text/javascript"}
+    , { "path": "nodejs/source/html/login", "cType": "text/html"}
+    , { "path": "nodejs/source/styles/login", "cType": "text/css"}
     ]
 
 , "defaultRedirect" : "nodejs/source/html/index.html"

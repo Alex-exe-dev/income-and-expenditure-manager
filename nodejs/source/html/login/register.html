@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de-de">
+    <head>
+        <meta charset="utf-8">
+        <title>Registrieren</title>
+        <link rel="stylesheet" href="../../styles/login/login.css" type="text/css">
+        <link rel="stylesheet" href="../../styles/login/register.css" type="text/css">
+        <link rel="stylesheet" href="../../styles/style.css" type="text/css">
+    </head>
+    <body>
+        <script src="../../js/register.js"></script>
+        <script src="../../js/hideExtensions.js"></script>
+        <script src="../../js/JSONManager_DataManager.js"></script>
+        <div class="flexMiddle">
+            <div class="loginFlex">
+                <p id="registerError" class="error"></p>
+                <p class="defaultHeadder whiteText ueberschrift">Registrieren</p>
+                <div>
+                    <input id="usernameInput" type="text" placeholder="Benutzernamen eingeben" class="loginFormInput">
+                </div>
+                <div>
+                    <input id="passwordInput" type="password" placeholder="Passwort eingeben" class="loginFormInput">
+                </div>
+                <div>
+                    <input type="button" value="Registrieren" class="loginFormSubmit" onclick="register()">
+                </div>
+
+                <div>
+                    <label class="container cbText">Angemelded bleiben?
+                        <input id="keepmeloggedin" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

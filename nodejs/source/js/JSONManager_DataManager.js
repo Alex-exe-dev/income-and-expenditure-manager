@@ -28,13 +28,13 @@ function loadData() {
     return JSON.parse(localStorage.getItem("jsonData"))
 }
 
-function createBasicJSONElement() {
+function createBasicJSONElement(name, password) {
     if (localStorage.getItem("jsonData") != null) return;
     const jsonData = {
         balance: 0,
         accountCreation: 0,
         name: "",
-        prename: "",
+        password: "",
         history: 
             [
                 {
@@ -48,6 +48,8 @@ function createBasicJSONElement() {
             ]
     };
     jsonData.accountCreation = new Date().toLocaleString();
+    jsonData.password = password;
+    jsonData.name = name;
     jsonData.history[0]["date"] = new Date().toLocaleString();
 
     localStorage.setItem("jsonData", JSON.stringify(jsonData))

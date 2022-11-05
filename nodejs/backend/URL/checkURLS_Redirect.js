@@ -13,6 +13,10 @@ module.exports = {
                 return "nodejs/source/html/MeineDaten.html";
             case "/daten%20loeschen":
                 return "nodejs/source/html/DatenLoeschen.html";
+            case "/login":
+                return "nodejs/source/html/login/login.html";
+            case "/register":
+                return "nodejs/source/html/login/register.html";
             default:
                 return null;
         }

@@ -1,3 +1,8 @@
+window.onload = function() {
+    
+}
+
+
 function onClickRechner(number) {
 
     //Variablen erstellen
@@ -40,5 +45,6 @@ function calculate() {
     } else {
         document.getElementById("outputHistory").innerHTML += (ergebniss + "<br>");
     }
-
+    if (ergebniss == null) return;
+    addData(new Date().toLocaleString(), null, ergebniss ,true);
 }
