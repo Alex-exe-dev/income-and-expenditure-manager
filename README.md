@@ -10,7 +10,7 @@ The index.js script creates a server on your loacalhost for you (Port:8000). It 
 This project is also avaiable as a Docker container: https://hub.docker.com/repository/docker/aleexedev/aerw-site
 
 # Make this a https service instead of http
-Currently it only creates a http server but you can easily change it to be a https server by changing line 2 to 
+Currently it only creates a http server but you can easily change it to be a https server by changing line 2 to: 
 
 ```const Https = require('https')```
 
