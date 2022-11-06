@@ -1,5 +1,8 @@
 # Income and expenditure manager
-This will hopefully sometimes be a website where you can manage your income and expenditure!
+This website is reachable under: https://aerw-b4mad-racing.apps.smaug.na.operate-first.cloud/
+
+The tabs "Übersicht" and "Startseite" are currently not working. 
+The Tabs "Graph", "Tabelle" and "Rechner" are **fully** functional.
 
 
 The index.js script creates a server on your loacalhost for you (Port:8000). It was partly created by @0bMERLIN (https://github.com/0bMERLIN).
