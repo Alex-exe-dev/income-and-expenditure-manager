@@ -1,6 +1,5 @@
 { "baseDirs" :
     [ { "path": "nodejs/source/styles", "cType": "text/css" }
-    , { "path": "nodejs/source/media", "cType": "image/jpeg" }
     , { "path": "nodejs/source/html", "cType": "text/html" }
     , { "path": "nodejs/source/js", "cType": "text/javascript"}
     , { "path": "nodejs/source/html/login", "cType": "text/html"}
