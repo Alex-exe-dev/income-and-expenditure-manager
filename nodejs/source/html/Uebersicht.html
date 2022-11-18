@@ -3,48 +3,26 @@
 <html lang="de">
     <head>
         <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
         <title>Übersicht</title>
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
         <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
+        <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
+
 
         <script src="../js/JSONManager_DataManager.js"></script>
     </head>
     <body>
         <script src="../js/hideExtensions.js"></script>
-
-        </script>
+        <nav class="navigatorBackground">
+            <input type="button" value="Home" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn" name="Startseite">
+            <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn selected">
+            <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn">
+            <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn">
+            <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn">
+        </nav>
         <div class="flexBox">
-            <div class="paddingRight">
-                <ul class="unsortedNavigator">
-                    <li><form>
-                        <input type="button" value="Startseite" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn button defaultText" name="Startseite">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                </ul>
-            </div>
             <div>
                 <h1>Übersicht</h1>
                 <hr>
@@ -52,21 +30,11 @@
             </div>
 
         </div>
-
-
-        <table border="1" style="width:50%">
-            <tr>
-                <td>15.06.2021</td>
-                <td>150€</td>
-                <td style="color: red;">Ausgabe</td>
-            </tr>
-            <tr>
-                <td>31.06.2021</td>
-                <td>200€</td>
-                <td style="color: rgb(2, 253, 2);">Einnahme</td>
-            </tr>
-        </table>
-        
+        <nav class="lowerEnd lowEnd">
+            <a href="./nodejs/source/html/MeineDaten.html" class="leButton">Meine Daten</a>
+            <br>
+            <a href="./nodejs/source/html/DatenLoeschen.html" class="leButton">Meine lokalen Daten löschen</a>
+        </nav>
     </body>
 
 

@@ -1,59 +1,50 @@
-@keyframes resizeButton{
-    from {width: 6vw;}
-    to {width: 7vw;}
-}
-
-.unsortedNavigator {
-    background-color: #263238;
-    list-style-type: none;
+.navigatorBackground {
+    background-color: #212121;
     padding-left: 0px;
     padding-right: 1vw;
-    width: 6vw;
-    height: 110vh;
+    width: 100vw;
+    height: 7vh;
     margin-top: 0vh;
     margin-left: 0px;
     margin-bottom: 0;
-}
-
-.paddingRight {
-    margin-right: 2vw;
+    text-align: right;
 }
 
 .navigatorBtn {
     border: 0.2vw solid transparent;
-    border-radius: 1vw;
-    cursor:pointer;
-    background-color: transparent;
-    border-right-color: cyan;
+    border-radius: 0.1rem;
 
-    width: 6vw;
-    height: 5vh;
+    cursor: pointer;
+
+    color: white;
+    background-color: transparent;
+
+    width: 10vw;
+    height: 7vh;
     margin-top: 0.2vh;
     padding-top: 0vh;
+    transition: 0.3s background-color;
+    font-size: 1.2vw;
 }
 
 .navigatorBtn:hover {
-    animation-name: resizeButton;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-
+    background-color: #323232;
 }
 
-.lineNavigator {
-    padding: 0;
-    margin-bottom: 0vh;
-    margin-top: 0vh;
-    border: 0.2vh solid cyan;
+.navigatorBtn.selected {
+    background-color: #323232;
 }
 
-.loginBtn {
-    margin-top: 60vh;
-    margin-left: 0vw;
-    width: 7vw;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0);
-    border-top: aqua solid 3px;
-    text-align: center;
-    cursor: pointer;
+@media only screen and (max-width: 800px) {
+    .navigatorBtn {
+        font-size: 2.5vw;
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navigatorBtn {
+        font-size: 3vw;
+        width: 15vw;
+    }
 }

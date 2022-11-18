@@ -22,21 +22,21 @@ body {
 }
 
 .loginFormInput {
-    border: aqua solid 3px;
+    border: #14FFEC solid 3px;
     border-radius: 10vw;
     width: 200px;
     height: 50px;
     text-align: center;
-    background-color: #283338;
+    background-color: #323232;
     margin-bottom: 3vh;
     transition: 0.5s;
 
-    color: springgreen;
+    color: #0D7377;
 
 }
 
 .loginFormInput::placeholder {
-    color: springgreen;
+    color: #0D7377;
     
 }
 
@@ -45,12 +45,12 @@ body {
 }
 
 .loginFormSubmit {
-    border: aqua solid 3px;
+    border: #14FFEC solid 3px;
     border-radius: 10vw;
     width: 100px;
     height: 50px;
-    color: springgreen;
-    background-color: #283338;
+    color: #0D7377;
+    background-color: #323232;
     text-align: center;
     transition: 0.3s;
 }
@@ -82,9 +82,9 @@ body {
 
 .registerBtn:hover {
     border-radius: 10vw;
-    border-bottom: aqua solid 3px;
-    border-left: aqua solid 3px;
-    border-right: aqua solid 3px;
+    border-bottom: #14FFEC solid 3px;
+    border-left: #14FFEC solid 3px;
+    border-right: #14FFEC solid 3px;
 }
 
 .container {
@@ -117,17 +117,17 @@ body {
     height: 15px;
     width: 15px;
     background-color: #283338;
-    border: aqua solid 3px;
+    border: #14FFEC solid 3px;
     border-radius: 7px;
 }
   
 
 .container:hover input ~ .checkmark {
-    background-color: black;
+    background-color: #0D7377;
 }
   
 .container input:checked ~ .checkmark {
-    background-color: springgreen;
+    background-color: #14FFEC;
 }
   
 .checkmark:after {

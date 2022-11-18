@@ -1,20 +1,27 @@
-div.lowerEnd {
-    background-color: #263238;
+.lowerEnd {
+    background-color: #212121;
     color: white;
-    max-height: 20vh;
+    height: 5vh;
     padding: 70px 0;
-    text-align: center;    
+    text-align: center;   
+    margin-top: 5vh; 
 }
 
 .leButton {
-    color: rgb(31, 31, 31);
+    color: white;
     text-decoration: none;
     font-size: 1rem;
     transition: 0.2s;
 }
 
 .leButton:hover {
-    color: cyan;
+    color: #14FFEC;
     font-size: 1.5rem;
     transition: 0.2s;
+}
+
+.lowEnd {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

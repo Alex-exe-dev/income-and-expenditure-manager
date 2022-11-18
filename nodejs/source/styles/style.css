@@ -1,7 +1,10 @@
+/*
 @font-face {
     font-family: SansitaSwashed;
     src: url('SansitaSwashed-VariableFont_wght.ttf')
 }
+*/
+
 
 @keyframes textFieldAnimation {
     from {background-color: rgb(31, 31, 31);}
@@ -20,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: cyan; 
+   background-color: #14FFEC; 
    border-radius: 2vw;
  }
   
@@ -35,7 +38,8 @@
 
 body {
   margin: 0;
-  background-color: #37474F;
+  background-color: #0e0e0e;
+  font-family: Lato;
 }
 
 .button {
@@ -46,22 +50,24 @@ body {
 }
 
 .defaultText {
+    color: white;
     font-size: 2vh;
     padding: 0;
-    font-family: SansitaSwashed;
+    font-family: Lato;
 
 }
 
 .defaultHeadder {
+    color: white;
     font-size: 10vh;
     text-align: center;
-    font-family: SansitaSwashed;
+    font-family: Lato;
 
 }
 
 .inputTextFeld {
 
-    border: 0.2vw solid cyan;
+    border: 0.2vw solid #14FFEC;
     border-radius: 12px;
     width: 25vw;
     height: 3vh;
@@ -83,7 +89,7 @@ body {
 
 img{
     background-color: white;
-    border: 3px solid cyan;
+    border: 3px solid #14FFEC;
     border-radius: 12px;
 }
 
@@ -98,36 +104,6 @@ img{
     flex-direction: column;
     margin-top: 0vh;
     margin-left: 0vw;
-}
-
-.serverStatus {
-    width: 81vw;
-    height: 5vh;
-    background-color: #283338;
-
-    margin-top: 4vh;
-    border-radius: 1vw;
-    border: aqua solid 0.1vw;
-}
-.serverText {
-    text-align: center;
-    margin-top: 0.2vh;
-    font-size: 120%;
-}
-.ready {
-    border-color: greenyellow;
-}
-.connected {
-    border-color: indianred;
-}
-.processing {
-    border-color: blue;
-}
-.request {
-    border-color: chocolate;
-}
-.servererror {
-    background-color: darkred;
 }
 
 .dragHover {

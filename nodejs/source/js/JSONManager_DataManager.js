@@ -77,7 +77,7 @@ function createJsonFileGraph() {
                     text: 'Gesamter Verlauf',
                     font:{
                         size: 100,
-                        family: 'SansitaSwashed'
+                        family: 'Lato'
                     },
                     padding:{
                         top: 50,

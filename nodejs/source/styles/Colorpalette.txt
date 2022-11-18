@@ -1,0 +1,5 @@
+background: black #0e0e0e
+primary: black #212121
+secondary: grey #323232
+3.: dark blue #0D7377
+finally: cyan #14FFEC

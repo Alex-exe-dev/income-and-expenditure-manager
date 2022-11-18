@@ -18,12 +18,21 @@ and remove the comments (```/* */```) in line 9 to 12.
 After that you need to generate a ```key.pem``` and a ```cert.pem``` for example with openssl to enable http over tls.
 
 If you try to run this code yourself you might notice that some files in /media and /styles are missing. This is due to copyright reasons.
-You should find all filenames somewhere in the css / html files. After that you can simply google the fonts to complete your build.
-
-The font of the site is downloadable here: https://fonts.google.com/specimen/Sansita+Swashed
 
 # general information 
 Currently this site doesn't get displayed properly in Firefox; It should work on Google Chrome though.
 
 To create a data structure to use this side you need to open the tab "Tabelle" which will open the registration menue. All inserted data is only
 stored locally in your browser and will **not** be uploaded to the server.
+
+# roadmap
+- end of 2022:
+  - finish and optimize the new disign of the site
+  - adding an English version of the application
+- 01/2023:
+  - add text to subpages
+  - maybe adding a white mode to the site
+- 03/2023:
+  - finally finishing the save and download option
+- 06/2023:
+  - adding local profiles to the application

@@ -3,6 +3,8 @@
 <html lang="de">
     <head>
         <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
         <title>Graph</title>
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
         <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
@@ -16,38 +18,14 @@
     <body>
         <script src="../js/hideExtensions.js"></script>
 
+        <nav class="navigatorBackground">
+            <input type="button" value="Home" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn" name="Startseite">
+            <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn">
+            <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn selected">
+            <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn">
+            <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn">
+        </nav>
         <div class="flexBox">
-            <div class="paddingRight">
-                <ul class="unsortedNavigator">
-                    <li><form>
-                        <input type="button" value="Startseite" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn button defaultText" name="Startseite">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                    <li>
-                        <hr class="lineNavigator">
-                    </li>
-                    <li><form>
-                        <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn button defaultText">
-                    </form></li>
-                </ul>
-            </div>
                     
             <div class="size" ondrop="dropHandler(event)" ondragover="dragOverHandler(event);" id="dragndrop" ondragleave="dragLeaveHandler()">
                 <canvas id="myChart"></canvas>

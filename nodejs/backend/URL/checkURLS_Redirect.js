@@ -17,6 +17,8 @@ module.exports = {
                 return "nodejs/source/html/login/login.html";
             case "/register":
                 return "nodejs/source/html/login/register.html";
+            case "/registrieren":
+                return "nodejs/source/html/login/register.html";
             default:
                 return null;
         }

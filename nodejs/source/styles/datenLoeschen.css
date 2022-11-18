@@ -18,7 +18,7 @@
 }
 
 .buttonD {
-    font-family: SansitaSwashed;
+    font-family: Lato;
     font-size: 1.5rem;
 
     color: white;
@@ -93,18 +93,18 @@
 }
 
 .alertHeader {
-    font-family: SansitaSwashed;
+    font-family: Lato;
     font-size: 1.4rem;
 }
 
 .alertText {
-    font-family: SansitaSwashed;
+    font-family: Lato;
     font-size: 1.4rem;
     line-height: 2.5rem;
 }
 
 .alertBackBtn {
-    font-family: SansitaSwashed;
+    font-family: Lato;
     font-size: 1rem;
 
     color: white;
@@ -128,7 +128,7 @@
 }
 
 .alertDeleteBtn {
-    font-family: SansitaSwashed;
+    font-family: Lato;
     font-size: 1rem;
 
     color: white;
