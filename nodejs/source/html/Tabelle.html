@@ -10,32 +10,33 @@
         <link rel="stylesheet" type="text/css" href="../styles/navigator.css">
         <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
         <link rel="stylesheet" type="text/css" href="../styles/tabelle.css">
+        
 
         <script src="../js/manageData.js"></script>
         <script src="../js/JSONManager_DataManager.js"></script>
         <script src="../js/DragNDropHandler.js"></script>
     </head>
     <body class="hideBar">
-        <nav class="navigatorBackground">
-            <input type="button" value="Home" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn" name="Startseite">
-            <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn">
-            <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn">
-            <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn selected">
-            <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn">
-        </nav>
+        <div class="flexBox">
+            <nav style="text-align: left; background-color: #212121; height: 7vh;">
+                <input type="button" value="Download" onclick="exportAndDownloadFile('export', 'Dies ist ein Text LUL')" class="navigatorBtn">
+            </nav>
+            <nav class="navigatorBackground">
+                <input type="button" value="Home" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn" name="Startseite">
+                <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn">
+                <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn">
+                <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn selected">
+                <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn">
+
+            </nav>
+        </div>
+
         <div class="flexBox">
             <div class="flexBoxHorizontal" ondrop="dropHandler(event)" ondragover="dragOverHandler(event);" id="dragndrop" ondragleave="dragLeaveHandler()">
                 <div>
                     <div class="flexBox">
                         <h1 class="defaultHeadder hedding" id="headLine">Tabellarische Ansicht</h1>
-                        <form>
-                            <input type="button" value="Download your Data" class="downloadButton" onclick="exportAndDownloadFile('export', 'Dies ist ein Text LUL')">
-                        </form>
-
                     </div>
-
-                    <hr class="underline">
-
                 </div>
                 <div class="inputDiv">
                     <form class="defaultText">
@@ -49,11 +50,10 @@
                         <table id="tableScroller" class="valueTable">
                         </table>
                     </div>
-                    <div class="zusammenfassung" id="balance">
-                        <p></p>
-                    </div>
                 </div>
-
+                <div class="zusammenfassung" id="balance">
+                    <p></p>
+                </div>
             </div>
 
         </div>
