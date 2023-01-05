@@ -40,12 +40,15 @@
                         <h1 class="defaultHeadder hedding" id="headLine">Tabellarische Ansicht</h1>
                     </div>
                 </div>
-                <div class="inputDiv">
-                    <form class="defaultText">
-                        Datum eingeben:  <input type="date" name="datum" class="inputTextFeld" id="date">
-                        Gelbetrag eingeben:  <input type="text" name="geldadded" class="inputTextFeld" id="value"> €     
-                        <input type="button" value="Hinzufügen" id="submitBtn" onclick="addTableElement(null, null, null, false);">
-                    </form>
+                <div class="inputDiv defaultText">
+                    <label for="date">Datum eingeben</label>
+                    <input type="date" name="datum" class="inputTextFeld" id="date" label="Datum eingeben">
+
+                    <label for="value">Geldbetrag eingeben</label>
+                    <input type="text" name="geldadded" class="inputTextFeld" id="value">
+                    <label for="date">€</label>
+
+                    <input type="button" value="Hinzufügen" id="submitBtn" onclick="addTableElement(null, null, null, false);">
                 </div>
                 <div class="flexBox">
                     <div class="tableScroller hideBar">

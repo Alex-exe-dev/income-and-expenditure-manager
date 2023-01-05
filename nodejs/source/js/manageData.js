@@ -24,7 +24,7 @@ window.onload = function() {
         addTableElement(jsonData.history[i].date, jsonData.history[i].reason, jsonData.history[i].value, false, true);
     }
     var balance = document.getElementById("balance");
-    balance.innerHTML = "balance:<br>" + jsonData.balance;
+    balance.innerHTML = "Balance: " + jsonData.balance;
 }
 
 
@@ -37,6 +37,10 @@ function addTableElement(date, reason, value, load, onload) {
         var date = document.getElementById("date").value
         var reason = "n/A"
         var value =  document.getElementById("value").value
+        if(!(Number.isInteger(value))) {
+            window.alert("Bitte gib nur Zahlen ein!");
+            return;
+        }
     }
     var scroller = document.getElementById('tableScroller')
 
@@ -90,7 +94,7 @@ function addTableElement(date, reason, value, load, onload) {
     jsonData.balance = balance;
     localStorage.setItem("jsonData", JSON.stringify(jsonData))
     var displayBalance = document.getElementById("balance");
-    displayBalance.innerHTML = "balance:<br>" + jsonData.balance;
+    displayBalance.innerHTML = "Balance: " + jsonData.balance;
 
     //add other Data
     addData(date, reason, value, false);

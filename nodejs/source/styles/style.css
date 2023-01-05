@@ -77,7 +77,7 @@ body {
     text-align: center;
     color: springgreen;
 
-    background-color: rgb(31, 31, 31);
+    background-color: #323232;
     outline: hidden;
     outline-color: black;
 }
@@ -86,13 +86,8 @@ body {
     animation-name: textFieldAnimation;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
-    border-color: rgb(0, 92, 92);
-}
-
-img{
-    background-color: white;
-    border: 3px solid #14FFEC;
-    border-radius: 12px;
+    border-color: #0D7377;
+    background-color: #14FFEC;
 }
 
 .flexBox {
