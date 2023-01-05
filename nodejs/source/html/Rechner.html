@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="../styles/lowerEnd.css">
         <script src="../js/JSONManager_DataManager.js"></script>
         
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     </head>
     <body class="rechner hideBar">
@@ -28,7 +29,6 @@
         <div class="flexBox">
             <div class="flexBoxHorizontal">
                 <h1 class="defaultHeadder" id="Headline">Rechner</h1>
-                <hr class="lineHeadding">
                 <div>
                     <form>
                         <table styles='border="1"' class="rechner">
@@ -64,6 +64,12 @@
                         </table>
                     </form>
                 </div>
+                <div>
+                    <ul class="outputHistoryScaled" id="outputHistoryScaled">
+                        <p class="outputHeadline">History</p>
+                        <hr class="lineOutputScaled">
+                    </ul>
+                </div>
             </div>
             
             <div>
@@ -72,6 +78,7 @@
                     <hr class="lineOutput">
                 </ul>
             </div>
+
         </div>
         <div class="lowerEnd">
             <a href="./nodejs/source/html/MeineDaten.html" class="leButton">Meine Daten</a>

@@ -40,11 +40,20 @@ function calculate() {
     var anzeigeString = document.getElementById("rechnerOutputBox").innerHTML;
     var ergebniss = eval(anzeigeString);
     document.getElementById("rechnerOutputBox").innerHTML = (anzeigeString + " = " + ergebniss);
+
+    //Add Result to History
     if ((anzeigeString.length) <= 25) {
-        document.getElementById("outputHistory").innerHTML += (anzeigeString + " = " + ergebniss + "<br>");
+        var Output = document.getElementById("outputHistory");
+        //Check if Output1 is hidden
+        Output.innerHTML += (anzeigeString + " = " + ergebniss + "<br>");
+        document.getElementById("outputHistoryScaled").innerHTML += (anzeigeString + " = " + ergebniss + "<br>");
+
     } else {
-        document.getElementById("outputHistory").innerHTML += (ergebniss + "<br>");
+        var Output = document.getElementById("outputHistory");
+        Output.innerHTML += (ergebniss + "<br>");
+        document.getElementById("outputHistoryScaled").innerHTML += (ergebniss + "<br>");
     }
     if (ergebniss == null) return;
+
     addData(new Date().toLocaleString(), null, ergebniss ,true);
 }

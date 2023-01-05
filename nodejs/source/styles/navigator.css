@@ -5,6 +5,8 @@
     height: 7vh;
     margin: 0px, 0px, 0px, 0px;
     text-align: right;
+    position: fixed;
+    margin-top: -5dvh;
 }
 
 .navigatorBtn {

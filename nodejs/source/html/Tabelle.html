@@ -15,19 +15,21 @@
         <script src="../js/manageData.js"></script>
         <script src="../js/JSONManager_DataManager.js"></script>
         <script src="../js/DragNDropHandler.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     </head>
     <body class="hideBar">
         <div class="flexBox">
-            <nav style="text-align: left; background-color: #212121; height: 7vh;">
-                <input type="button" value="Download" onclick="exportAndDownloadFile('export', 'Dies ist ein Text LUL')" class="navigatorBtn">
-            </nav>
             <nav class="navigatorBackground">
                 <input type="button" value="Home" onclick="location.href='nodejs/source/html/index.html'" class="navigatorBtn" name="Startseite">
                 <input type="button" value="Übersicht" onclick="location.href='nodejs/source/html/Uebersicht.html'" class="navigatorBtn">
                 <input type="button" value="Graph" onclick="location.href='nodejs/source/html/Graph.html'" class="navigatorBtn">
                 <input type="button" value="Tabelle" onclick="location.href='nodejs/source/html/Tabelle.html'" class="navigatorBtn selected">
                 <input type="button" value="Rechner" onclick="location.href='nodejs/source/html/Rechner.html'" class="navigatorBtn">
-
+            </nav>
+            <nav style="text-align: left; position: fixed; background-color: #212121; height: 7vh;margin-top: -5dvh;">
+                <input type="button" value="Download" onclick="exportAndDownloadFile('export', 'Dies ist ein Text LUL')" class="navigatorBtn">
             </nav>
         </div>
 
