@@ -40,8 +40,7 @@ body {
   margin: 0;
   background-color: #0e0e0e;
   font-family: Lato;
-  max-width: 100%;
-  overflow-x: hidden;
+  width: 100dvw;
 }
 
 .button {
