@@ -6,6 +6,9 @@ window.onload = function () {
     } else {
         window.history.pushState("TestString", document.title, "/" + document.title)
     }
+
+    if(localStorage.getItem("darkMode") == null) return;
+    if(localStorage.getItem("darkMode") == "false") document.body.classList.toggle("light-mode")
 }
 
 

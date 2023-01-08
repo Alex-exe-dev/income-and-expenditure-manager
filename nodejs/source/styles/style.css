@@ -39,9 +39,15 @@
 body {
   margin: 0;
   background-color: #0e0e0e;
+  color: white;
   font-family: Lato;
   width: 100dvw;
   padding-top: 5dvh;
+}
+
+.light-mode {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .button {
@@ -52,7 +58,6 @@ body {
 }
 
 .defaultText {
-    color: white;
     font-size: 1.2vw;
     padding: 0;
     font-family: Lato;
@@ -60,7 +65,6 @@ body {
 }
 
 .defaultHeadder {
-    color: white;
     font-size: 5vw;
     text-align: center;
     font-family: Lato;

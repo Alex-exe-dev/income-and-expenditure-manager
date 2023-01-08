@@ -41,6 +41,7 @@ function addTableElement(date, reason, value, load, onload) {
             eval(value); 
         } catch {
             window.alert("Bitte gib nur Zahlen ein!");
+            return;
         }
 
     }
@@ -106,11 +107,6 @@ function addTableElement(date, reason, value, load, onload) {
 
 //#####################################################EXPORT ZONE#####################
 function exportAndDownloadFile() {
-    /*
-    for (var i = 0; i <= 1000; i++) {
-        XMLRequest('get', 'Hallo123', '456789', "na", "na", "na", dataCollector, i);
-    }
-    */
     if (loadData() != false) {
         var exptData = JSON.stringify(loadData());
 
