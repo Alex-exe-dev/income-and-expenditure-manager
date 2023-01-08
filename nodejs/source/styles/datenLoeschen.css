@@ -28,14 +28,14 @@
     background-color: #37474F;
     border-radius: 10px;
 
-    margin-top: 10vh;
+    margin-top: 10dvh;
     cursor: pointer;
 }
 
 .buttonDelete  {
     border-color: lightcoral;
     transition: 0.1s;
-    margin-bottom: 27vh;
+    margin-bottom: 27dvh;
 }
 
 .buttonDelete:hover {

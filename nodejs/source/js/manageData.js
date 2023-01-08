@@ -37,10 +37,12 @@ function addTableElement(date, reason, value, load, onload) {
         var date = document.getElementById("date").value
         var reason = "n/A"
         var value =  document.getElementById("value").value
-        if(!(Number.isInteger(value))) {
+        try {
+            eval(value); 
+        } catch {
             window.alert("Bitte gib nur Zahlen ein!");
-            return;
         }
+
     }
     var scroller = document.getElementById('tableScroller')
 
